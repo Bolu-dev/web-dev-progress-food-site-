@@ -1,0 +1,188 @@
+main h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: rgb(238, 164, 80);
+}
+
+/* image styling */
+.food img {
+  height: 20rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* hamburger  */
+.menu-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 3rem;
+  width: 3rem;
+  display: none;
+}
+
+.menu-btn span {
+  background-color: white;
+  width: 100%;
+  height: 3px;
+}
+
+/* aside */
+
+#side-drawer:target {
+  display: block;
+}
+
+#side-drawer {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(44, 41, 38);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+#side-drawer header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 5%;
+  height: 5rem;
+}
+
+#side-drawer ul {
+  margin: 0;
+  padding: 4rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#side-drawer li {
+  padding: 2rem 1rem;
+  margin: 1rem 0;
+}
+
+#side-drawer nav a {
+  font-size: 2rem;
+  color: rgb(185, 131, 31);
+}
+
+#side-drawer nav a:hover {
+  color: rgb(230, 165, 45);
+}
+
+/* card styling */
+
+#container {
+  margin: 2rem auto;
+  width: 80%;
+}
+
+#container ul {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.food {
+  background-color: rgb(228, 206, 182);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.food-item-content h2 {
+  padding: 0 0 1rem 0;
+}
+
+.food-item-content {
+  padding: 1.25rem;
+  text-align: center;
+}
+
+/* order */
+#side-drawer2:target {
+  display: block;
+}
+
+#side-drawer2 nav a {
+  color: rgb(185, 131, 31);
+  font-size: 2rem;
+}
+
+#side-drawer2 header {
+  background-color: rgb(44, 41, 38);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 5%;
+  height: 5rem;
+}
+#side-drawer2 {
+  background-color: whitesmoke;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+#order {
+  margin: 0;
+  padding: 4rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#order img {
+  height: 15.75rem;
+  width: 19rem;
+  border-radius: 100%;
+}
+
+#order h2 {
+  font-size: 2.5rem;
+}
+
+#order p {
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+/* button  */
+
+.btn {
+  padding: 0.5rem 1.5rem;
+  color: rgb(238, 164, 80);
+  background-color: rgb(29, 26, 24);
+  border-radius: 8px;
+}
+
+.btn:hover {
+  background-color: rgb(245, 157, 50);
+  color: rgb(32, 30, 30);
+}
+
+/* for phones */
+@media (max-width: 48rem) {
+  #main-header nav {
+    display: none;
+  }
+  #side-drawer2 nav {
+    display: none;
+  }
+
+  .menu-btn {
+    display: flex;
+  }
+
+  #container ul {
+    grid-template-columns: 1fr;
+  }
+}
